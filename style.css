@@ -81,6 +81,7 @@ body,
 
 #btn-linkedin,
 #btn-github {
+  font-family: "Krona One";
   border: none;
   display: flex;
   justify-content: center;
