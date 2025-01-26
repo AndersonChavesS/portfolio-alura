@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -15,39 +15,56 @@
     <title>Portfolio On_line Anderson Chaves</title>
   </head>
   <body>
+    <header>
+      <nav class="header">
+        <a href="./index.html">Inicio</a>
+        <a href="./about.html">Sobre</a>
+        <a href="./curriculum.html">Curriculum</a>
+
+      </nav>
+    </header>
     <main class="container">
-      <section class="descriptions">
-        <div class="box-descriptions">
-          <h1 id="title">
-            Eleve seu negócio digital a outro nível
-            <strong id="title-complement"
-              >com um Front-end de qualidade!</strong
+      <section class="container__presentation">
+        <h1 class="container__presentation__title">
+          Eleve seu negócio digital a outro nível
+          <strong class="featured-text">com um Front-end de qualidade!</strong>
+        </h1>
+        <p class="container__presentation__content">
+          Olá! Sou Anderson Chaves, desenvolvedor Front-end com especialidades
+          em <strong class="featured-text">React, HTML e CSS</strong>. Ajudo
+          pequenos negócios e designers a colocarem em prática boas ideias.
+          Vamos conversar!
+        </p>
+
+        <div class="container__presentation__buttons">
+          <h2 class="container__presentation__caption">Acesse minhas redes:</h2>
+          <div class="container__presentation__buttons__links">
+            <a
+              class="container__presentation__buttons__links__link"
+              href="https://www.linkedin.com/in/developer-anderson-chaves/"
+              target="_blank"
             >
-          </h1>
-          <p id="description">
-            Olá! Sou Anderson Chaves, desenvolvedor Front-end com especialidades
-            em React, HTML e CSS. Ajudo pequenos negócios e designers a
-            colocarem em prática boas ideias. Vamos conversar!
-          </p>
-        </div>
-        <div class="container-button">
-          <a
-            id="btn-linkedin"
-            href="https://www.linkedin.com/in/developer-anderson-chaves/"
-            target="_blank"
-          >
-            <img src="./img/linkedin-ico.png" alt="icone-linkedin" />Linkedin
-          </a>
-          <a
-            id="btn-github"
-            href="https://github.com/AndersonChavesS"
-            target="_blank"
-          >
-            <img src="./img/gitHub-ico.png" alt="" /> GitHub
-          </a>
+              <img
+                src="./assets/linkedin-in-brands-solid.svg"
+                alt="icone-linkedin"
+              />Linkedin
+            </a>
+            <a
+              class="container__presentation__buttons__links__link"
+              href="https://github.com/AndersonChavesS"
+              target="_blank"
+            >
+              <img src="./assets/gitHub-ico.png" alt="" /> GitHub
+            </a>
+          </div>
         </div>
       </section>
-      <img id="img-profile" src="./img/image-profile.jpg" alt="imagem perfil" />
+      <img
+        class="container__img"
+        src="./assets/image-profile.jpg"
+        alt="imagem perfil"
+      />
     </main>
+    <footer id="footer"><p>Desenvolvido por Anderson Chaves</p></footer>
   </body>
 </html>
