@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--color-text);
+}
+
+:root {
+  --border-button: #1d296e;
+  --color-box-shadow: #6c01c4;
+  --color-primary: #dccee2;
+  --color-secondary: #44d8fd;
+  --color-terciary: #1d296e;
+  --neutral-color: #110218;
+
+  --font-family-primary: "Krona One", sans-serif;
+  --font-family-secondary: "Montserrat", sans-serif;
+
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--neutral-color);
+  background: -webkit-linear-gradient(
+    0deg,
+    var(--color-primary) 0% var(--color-terciary) 50%,
+    var(--neutral-color) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    var(--color-primary) 0%,
+    var(--color-terciary) 50%,
+    var(--neutral-color) 100%
+  );
+}
+
+.header {
+  display: flex;
+  justify-content: start;
+  gap: 5rem;
+  padding: 1% 10%;
+  font-family: var(--font-family-primary);
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  margin: 3.4% 10%;
+}
+
+.container__presentation {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.container__presentation__title,
+#title__about {
+  font-family: var(--font-family-primary);
+  width: 100%;
+  font-size: 3.8rem;
+  line-height: 5.2rem;
+  color: var(--color-primary);
+}
+
+.featured-text {
+  color: var(--color-secondary);
+}
+
+.container__presentation__content {
+  font-family: var(--font-family-secondary);
+  width: 100%;
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+  color: var(--color-primary);
+}
+
+.container__presentation__buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.container__presentation__caption {
+  font-family: var(--font-family-secondary);
+  font-size: 2rem;
+}
+
+.container__presentation__buttons__links {
+  width: 100%;
+  display: flex;
+  gap: 5rem;
+}
+
+.container__presentation__buttons__links img {
+  width: 35px;
+  padding: 0.6rem;
+}
+
+.container__presentation__buttons__links__link {
+  font-family: var(--font-family-primary);
+  border: 2px solid var(--border-button);
+  display: flex;
+  justify-content: space-evenly;
+  background: transparent;
+  border-radius: 16px;
+  align-items: center;
+  color: var(--color-terciary);
+  font-size: 2rem;
+  width: 100%;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.container__presentation__buttons__links__link:hover {
+  box-shadow: var(--color-box-shadow) 0px 0px 10px 1px;
+}
+
+.container__img {
+  flex: 1;
+  width: 50%;
+  height: 70vh;
+  border-radius: 16px;
+  box-shadow: var(--color-box-shadow) 0px 0px 15px 5px;
+}
+
+#footer {
+  width: 100%;
+  padding: 1%;
+  background: var(--color-terciary);
+  background: -webkit-linear-gradient(
+    0deg,
+    var(--color-terciary) 10%,
+    var(--color-primary) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    var(--color-terciary) 0%,
+    var(--color-primary) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: var(--font-family-primary);
+}
+
+#footer p {
+  color: var(--color-terciary);
+}
+
+/* about e curriculum*/
+.text-about {
+  font-family: var(--font-family-secondary);
+  color: var(--color-primary);
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  text-shadow: 0px 0px 10px black;
+}
+
+.text-about a:hover {
+  text-decoration: underline;
+  color: #44d8fd;
+}
+
+.container__presentation ul li {
+  margin-left: 3%;
+}
