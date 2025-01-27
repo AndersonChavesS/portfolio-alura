@@ -175,7 +175,6 @@ body {
     justify-content: center;
   }
   .container {
-    border: 1px solid;
     width: auto;
     flex-direction: column-reverse;
     padding: 5%;
@@ -230,8 +229,10 @@ body {
     justify-content: center;
     object-fit: fill;
     width: auto;
+    max-width: 85%;
+    height: 30vh;
   }
-  .footer{
+  .footer {
     padding: 5%;
   }
 }
