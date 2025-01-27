@@ -257,4 +257,9 @@ body {
   .container__img{
     width: 90%;
   }
+
+  .container__img__profile{
+    width: 70%;
+    height: 30vh;
+  }
 }
