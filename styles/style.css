@@ -228,14 +228,7 @@ body {
     padding: 0.5rem 0;
   }
 
-  .container__img {
-    display: flex;
-    justify-content: center;
-    object-fit: cover;
-    width: auto;
 
-    height: 50vh;
-  }
   .footer {
     padding: 5%;
   }
