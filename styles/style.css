@@ -260,6 +260,6 @@ body {
 
   .container__img__profile{
     width: 70%;
-    height: 30vh;
+    height: auto;
   }
 }
