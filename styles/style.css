@@ -227,10 +227,10 @@ body {
   .container__img {
     display: flex;
     justify-content: center;
-    object-fit: fill;
+    object-fit: cover;
     width: auto;
-    max-width: 85%;
-    height: 30vh;
+
+    height: 50vh;
   }
   .footer {
     padding: 5%;
