@@ -15,8 +15,6 @@
 
   --font-family-primary: "Krona One", sans-serif;
   --font-family-secondary: "Montserrat", sans-serif;
-
-  font-size: 62.5%;
 }
 
 a {
@@ -24,6 +22,7 @@ a {
 }
 
 body {
+  width: auto;
   display: flex;
   flex-direction: column;
   background: var(--neutral-color);
@@ -43,34 +42,33 @@ body {
 .header {
   display: flex;
   justify-content: start;
-  gap: 5rem;
-  padding: 1% 10%;
+  gap: 50px;
+  padding: 1% 15%;
   font-family: var(--font-family-primary);
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--color-primary);
 }
 
 .container {
   display: flex;
   align-items: center;
-  gap: 8rem;
-  margin: 3.4% 10%;
+  gap: 82px;
+  margin: 2% 15%;
 }
 
 .container__presentation {
-  flex: 1;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 30px;
 }
 
 .container__presentation__title,
 #title__about {
   font-family: var(--font-family-primary);
   width: 100%;
-  font-size: 3.8rem;
-  line-height: 5.2rem;
+  font-size: 2.25rem;
   color: var(--color-primary);
 }
 
@@ -81,8 +79,7 @@ body {
 .container__presentation__content {
   font-family: var(--font-family-secondary);
   width: 100%;
-  font-size: 2.4rem;
-  line-height: 3.8rem;
+  font-size: 1.4rem;
   color: var(--color-primary);
 }
 
@@ -92,36 +89,36 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 50px;
 }
 
 .container__presentation__caption {
   font-family: var(--font-family-secondary);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .container__presentation__buttons__links {
   width: 100%;
   display: flex;
-  gap: 5rem;
+  gap: 50px;
 }
 
 .container__presentation__buttons__links img {
-  width: 35px;
+  width: 3.2rem;
   padding: 0.6rem;
 }
 
-.container__presentation__buttons__links__link {
+.container__presentation__buttons__links__navegation {
   font-family: var(--font-family-primary);
   border: 2px solid var(--border-button);
   display: flex;
   justify-content: space-evenly;
   background: transparent;
-  border-radius: 16px;
   align-items: center;
+  border-radius: 16px;
   color: var(--color-terciary);
-  font-size: 2rem;
-  width: 100%;
+  font-size: 1.5rem;
+  width: 50%;
   padding: 1rem 0;
   cursor: pointer;
   transition: 0.2s;
@@ -132,43 +129,33 @@ body {
 }
 
 .container__img {
-  flex: 1;
+  object-fit: cover;
   width: 50%;
   height: 70vh;
   border-radius: 16px;
   box-shadow: var(--color-box-shadow) 0px 0px 15px 5px;
 }
 
-#footer {
+.footer {
   width: 100%;
   padding: 1%;
-  background: var(--color-terciary);
-  background: -webkit-linear-gradient(
-    0deg,
-    var(--color-terciary) 10%,
-    var(--color-primary) 100%
-  );
-  background: linear-gradient(
-    0deg,
-    var(--color-terciary) 0%,
-    var(--color-primary) 100%
-  );
+  background: var(--neutral-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: var(--font-family-primary);
 }
 
-#footer p {
-  color: var(--color-terciary);
+.footer p {
+  color: var(--color-primary);
 }
 
 /* about e curriculum*/
 .text-about {
   font-family: var(--font-family-secondary);
   color: var(--color-primary);
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin-top: 1rem;
   text-shadow: 0px 0px 10px black;
@@ -181,4 +168,53 @@ body {
 
 .container__presentation ul li {
   margin-left: 3%;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    justify-content: center;
+  }
+  .container {
+    border: 1px solid;
+    width: auto;
+    flex-direction: column-reverse;
+    padding: 5%;
+    gap: 40px;
+    margin: 0;
+  }
+
+  .container__presentation {
+    width: auto;
+  }
+
+  .container__img {
+    object-fit: fill;
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container__presentation__title,
+  #title__about {
+    font-size: 1.8rem;
+  }
+
+  .container__presentation {
+    width: 100%;
+  }
+
+  .header,
+  .container__presentation__content,
+  .container__presentation__caption,
+  .container__presentation__buttons__links__navegation,
+  .footer p {
+    font-size: 1rem;
+  }
+
+  .container__img {
+    display: flex;
+    justify-content: center;
+    object-fit: fill;
+    width: auto;
+  }
 }
