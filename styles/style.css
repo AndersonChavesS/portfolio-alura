@@ -68,7 +68,7 @@ body {
 #title__about {
   font-family: var(--font-family-primary);
   width: 100%;
-  font-size: 2.25rem;
+  font-size: 2rem;
   color: var(--color-primary);
 }
 
